@@ -37,18 +37,15 @@ export default function home() {
           <form name="contact" method="POST" netlify="true">
             <input type="hidden" name="subject" value="Inquiry from stevew.netlify.app" />
             <div>
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <label>Name <input type="text" name="name" id="name" /></label>
             </div>
 
             <div>
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <label>Email <input type="text" name="email" id="email" /></label>
             </div>
 
             <div>
-              <label htmlFor="message">Message</label>
-              <textarea onChange={validateMessage} name="message" id="message"></textarea>
+              <label>Message <textarea onChange={validateMessage} name="message" id="message"></textarea></label>
               <p>Character Limit {messageChar}/500</p>
             </div>
 
