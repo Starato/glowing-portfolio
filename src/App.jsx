@@ -24,6 +24,9 @@ function App() {
       </div>
       
       <div className='hidden'>
+        <form name="test" action="" data-netlify="true">
+          <input type="hidden" name="form-name" value="test" />
+        </form>
         <ContactForm />
       </div>
     </main>
