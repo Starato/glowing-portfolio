@@ -34,18 +34,21 @@ export default function home() {
         <Logo />
 
         <div id='contact'>
-          <form name="contact" method="POST" netlify="true">
+          <form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="subject" value="Inquiry from stevew.netlify.app" />
             <div>
-              <label>Name <input type="text" name="name" id="name" /></label>
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="name" />
             </div>
 
             <div>
-              <label>Email <input type="text" name="email" id="email" /></label>
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" id="email" />
             </div>
 
             <div>
-              <label>Message <textarea onChange={validateMessage} name="message" id="message"></textarea></label>
+              <label htmlFor="message">Message</label>
+              <textarea onChange={validateMessage} name="message" id="message"></textarea>
               <p>Character Limit {messageChar}/500</p>
             </div>
 
