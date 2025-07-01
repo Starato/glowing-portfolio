@@ -34,7 +34,8 @@ export default function home() {
         <Logo />
 
         <div id='contact'>
-          <form name="contact" netlify="true">
+          <form name="contact" method="POST" netlify="true">
+            <input type="hidden" name="subject" value="Inquiry from stevew.netlify.app" />
             <div>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
