@@ -36,6 +36,7 @@ export default function home() {
         <div id='contact'>
           <form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="subject" value="Inquiry from stevew.netlify.app" />
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
