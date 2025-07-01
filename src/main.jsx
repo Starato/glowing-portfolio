@@ -8,7 +8,6 @@ import App from './App.jsx'
 import Projects from './Projects/home.jsx'
 import Info from './Info/home.jsx'
 import Contact from './Contact/home.jsx'
-import Success from './Success/home.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
