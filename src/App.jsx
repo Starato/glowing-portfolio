@@ -1,6 +1,7 @@
 import './App.scss'
 import Logo from './Components/Logo/Logo.jsx'
 import Menu from './Components/Menu/Menu.jsx'
+import ContactForm from './Components/ContactForm/ContactForm.jsx'
 
 function App() {
 
@@ -20,6 +21,10 @@ function App() {
             technologies, I create responsive user interfaces, robust APIs, and maintainable codebases.
           </p>
         </div>
+      </div>
+      
+      <div className='hidden'>
+        <ContactForm />
       </div>
     </main>
   )
