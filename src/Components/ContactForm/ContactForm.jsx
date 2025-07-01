@@ -20,8 +20,7 @@ export default function ContactForm() {
 		}
 		
 	return (
-    <form name="contact" action="/pages/success" method="POST" data-netlify="true">
-			<input type="hidden" name="subject" value="Inquiry from stevew.netlify.app" />
+    <form name="contact" action="/thanks" method="POST" data-netlify-honeypot="bot-field" data-netlify="true">
 			<input type="hidden" name="form-name" value="contact" />
 			<div>
 					<label htmlFor="name">Name</label>
