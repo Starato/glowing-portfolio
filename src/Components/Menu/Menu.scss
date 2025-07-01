@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+    div {
+        height: 9vw;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        letter-spacing: 0.3rem;
+        font-size: 8vw;
+        transition: color 0.5s, font-size 1.5s, -webkit-text-stroke 0.5s;
+    } 
+}
+
+@mixin focus-menu() {
+    font-size: 9vw;
+    color: white !important;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 2px 2px rgb(101, 101, 101);
+}
+
+.menu > div > a:hover {
+    @include focus-menu();
+}
+
+.focused {
+    @include focus-menu();
+}

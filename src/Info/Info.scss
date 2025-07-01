@@ -1,0 +1,18 @@
+#info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: end;
+    gap: 1rem;
+}
+
+#info > span {
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: 0rem 1rem;
+    pointer-events: none;
+    align-content: center;
+    box-shadow: 0 5px 0.5rem #8080804f;
+}
