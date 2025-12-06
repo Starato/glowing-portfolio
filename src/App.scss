@@ -1,7 +1,15 @@
+main {
+    background-image: url('/colorado_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .content {
     display: grid;
     grid-template-columns: auto auto;
     height: 100%;
+    padding: 2rem;
 }
 
 .content p {
@@ -24,6 +32,10 @@
 }
 
 @media (max-width: 769px) {
+    main {
+        background-position: 57%;
+    }
+
     .content {
         display: flex;
         justify-content: center;

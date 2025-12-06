@@ -1,5 +1,15 @@
 #contact {
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+input,
+textarea {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 #contact > form {
@@ -9,14 +19,39 @@
     flex-direction: column;
 }
 
-#contact > form > div {
+form > div {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0.5rem;
+}
+
+.cnt-fld {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 0.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    input {
+        padding-left: 3rem;
+        height: 2rem;
+    }
+}
+
+form > div:nth-of-type(3) {
+    position: relative;
 
     textarea {
         resize: none;
         height: 10rem;
+        padding: 0.6rem;
     }
 }
 
@@ -26,6 +61,7 @@
     background-color: #4f99f3;
     width: 100%;
     border: none;
+    border-radius: 0.5rem;
 }
 
 #contact button:hover {

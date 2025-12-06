@@ -1,30 +1,23 @@
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-
     div {
-        height: 9vw;
+        height: max-content;
         display: flex;
         align-items: center;
     }
 
     a {
         text-decoration: none;
+        display: inline-block;
         color: black;
         font-weight: bolder;
-        letter-spacing: 0.3rem;
-        font-size: 8vw;
-        transition: color 0.5s, font-size 1.5s, -webkit-text-stroke 0.5s;
+        font-size: 4rem;
+        transition: color 0.5s, font-size 3s, -webkit-text-stroke 0.5s ease;
     } 
 }
 
 @mixin focus-menu() {
-    font-size: 9vw;
+    transform: scale(1.1);
     color: white !important;
-    -webkit-text-stroke: 1px #000000;
-    text-shadow: 2px 2px rgb(101, 101, 101);
 }
 
 .menu > div > a:hover {
@@ -33,4 +26,20 @@
 
 .focused {
     @include focus-menu();
+}
+
+@media (max-width: 769px) {
+    .mobile {
+        display: block;
+    }
+
+    .menu > div > a {
+        transition: none;
+    }
+
+    .menu > div > a:hover,
+    .focused {
+        color: black !important;
+        transform: scale(1);
+    }
 }
