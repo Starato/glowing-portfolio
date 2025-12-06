@@ -22,6 +22,7 @@ export default function ContactForm() {
 	return (
 		<form name="contact" action="/thanks" method="POST" data-netlify-honeypot="bot-field" data-netlify="true">
 			<input type="hidden" name="form-name" value="contact" />
+			<input type="hidden" name="subject" value="GPortfolio Contact Form Submission" />
 			<div>
 				<div>
 					<label htmlFor="name">Name</label>
