@@ -10,9 +10,13 @@
 #info > span {
     height: 2rem;
     border-radius: 1rem;
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0rem 1rem;
     pointer-events: none;
     align-content: center;
-    box-shadow: 0 5px 0.5rem #8080804f;
+    color: white;
+    text-shadow: 0px 2px 4px #000000;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 3px 0.5rem rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
 }

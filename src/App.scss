@@ -14,11 +14,14 @@ main {
 
 .content p {
     width: 30vw;
+    color: white;
+    text-shadow: 2px 3px 5px #000000e5;
 }
 
 .content > div:nth-child(2) {
     display: grid;
     grid-template-rows: auto auto;
+    pointer-events: none;
 }
 
 .content > div:nth-child(2) > :nth-child(1) {
@@ -28,7 +31,7 @@ main {
 .content > div:nth-child(2) > :nth-child(2) {
     display: flex;
     justify-content: right;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 @media (max-width: 769px) {
