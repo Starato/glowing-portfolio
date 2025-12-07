@@ -33,12 +33,8 @@
         display: block;
     }
 
-    .menu > div > a {
-        transition: none;
-    }
-
-    .menu > div > a:hover,
-    .focused {
+    .focused,
+    .menu > div > a:hover {
         color: black !important;
         transform: scale(1);
     }
