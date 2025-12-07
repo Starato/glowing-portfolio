@@ -9,6 +9,7 @@
 
 .logo > div > span {
     font-size: clamp(2rem, 3rem, 5vw);
+    pointer-events: none;
 }
 
 .logo > span:last-of-type {
